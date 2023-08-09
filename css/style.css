@@ -5,7 +5,10 @@
 }
 
 /* Custom Properties, update these for your own design */
+body{
 
+    zoom:1.6;
+}
 :root {
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Roboto Slab', serif;
@@ -393,12 +396,20 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px; /* Adjust the gap between grid items as needed */
+    
+    
 }
 
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
     height: 300px; /* Set a specific height for the grid items */
+    /* width: 70%; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center; */
+
 }
 
 .portfolio__img {
