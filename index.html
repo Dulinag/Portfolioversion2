@@ -79,40 +79,96 @@
         </section>
         
         <!-- My Work -->
+
+        <style>
+            .portfolio__item {
+                position: relative;
+                display: inline-block;
+                margin: 10px;
+            }
+    
+            .portfolio__img {
+                max-width: 100%;
+                height: 100%;
+            }
+    
+            .img-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                padding: 10px;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+    
+            .portfolio__item:hover .img-overlay {
+                opacity: 1;
+                visibility: visible;
+            }
+        </style>
         <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My work</h2>
+            
             <p class="section__subtitle section__subtitle--work">A Selection of my App and websites</p>
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="https://github.com/Dulinag" target="_blank" class="portfolio__item">
-                    <img src="img/lebron.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 02 -->
-                <a href="https://github.com/Dulinag" target="_blank" class="portfolio__item">
-                    <img src="img/Anime.png" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <a href="https://github.com/Dulinag" target="_blank">
+                        <img src="img/lebron.png" alt="" class="portfolio__img">
+                        <div class="img-overlay">NBA APP</div>
+                    </a>
+                </div>
+
+                <div class="portfolio__item">
+                    <a href="https://github.com/Dulinag" target="_blank">
+                        <img src="img/Anime.png" alt="" class="portfolio__img">
+                            <div class="img-overlay">Anime APP</div>
+                    </a>
+                </div>
+              
+                <div class="portfolio__item">
+                    <a href="https://github.com/Dulinag" target="_blank">
+                        <img src="img/form2.png" alt="" class="portfolio__img">
+                        <div class="img-overlay">Chibi Canvas</div>
+                    </a>
+                </div>
+             
                 <!-- Portfolio item 03 -->
-                <a href="https://github.com/Dulinag" target="_blank" class="portfolio__item">
-                    <img src="img/weather.png" alt="" class="portfolio__img">
-                </a>
-                
+
+                <div class="portfolio__item">
+                    <a href="https://github.com/Dulinag" target="_blank">
+                        <img src="img/weather.png" alt="" class="portfolio__img">
+                        <div class="img-overlay">Weather APP</div>
+                    </a>
+                </div>
+          
                 <!-- Portfolio item 04 -->
-                <a href="https://github.com/Dulinag" target="_blank" class="portfolio__item">
-                    <img src="img/form1.png" alt="" class="portfolio__img">
-                </a>
+
+                <div class="portfolio__item">
+                    <a href="https://github.com/Dulinag" target="_blank">
+                        <img src="img/form1.png" alt="" class="portfolio__img">
+                        <div class="img-overlay">MUI Form</div>
+                    </a>
+                </div>
+              
                        <!-- Portfolio item 06 -->
-                <a href="https://github.com/Dulinag" target="_blank" class="portfolio__item">
-                    <img src="img/p1v1.png" alt="" class="portfolio__img">
-                </a>
+
+                       <div class="portfolio__item">
+                        <a href="https://github.com/Dulinag" target="_blank">
+                            <img src="img/p1v1.png" alt="" class="portfolio__img">
+                            <div class="img-overlay">Portfolio Version One</div>
+                        </a>
+                    </div>
+              
                 
                 <!-- Portfolio item 05 -->
-                <a href="https://github.com/Dulinag" target="_blank" class="portfolio__item">
-                    <img src="img/form2.png" alt="" class="portfolio__img">
-                </a>
-                
+
+            
          
            
                 
